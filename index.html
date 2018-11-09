@@ -1,352 +1,759 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <title>pulse - Music, Audio and Radio web application</title>
-  <meta name="description" content="Music, Musician, Bootstrap" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <!-- for ios 7 style, multi-resolution icon of 152x152 -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-barstyle" content="black-translucent">
-  <link rel="apple-touch-icon" href="images/logo.png">
-  <meta name="apple-mobile-web-app-title" content="Flatkit">
-  <!-- for Chrome on Android, multi-resolution icon of 196x196 -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" sizes="196x196" href="images/logo.png">
-  
-  <!-- style -->
-  <link rel="stylesheet" href="css/animate.css/animate.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/glyphicons/glyphicons.css" type="text/css" />
-  <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css" type="text/css" />
-  <link rel="stylesheet" href="css/material-design-icons/material-design-icons.css" type="text/css" />
-  <link rel="stylesheet" href="css/bootstrap/dist/css/bootstrap.min.css" type="text/css" />
-
-  <!-- build:css css/styles/app.min.css -->
-  <link rel="stylesheet" href="css/styles/app.css" type="text/css" />
-  <link rel="stylesheet" href="css/styles/style.css" type="text/css" />
-  <link rel="stylesheet" href="css/styles/font.css" type="text/css" />
-  
-  <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css" type="text/css" />
-  <link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.css" type="text/css" />
-  <link rel="stylesheet" href="libs/mediaelement/build/mediaelementplayer.min.css" type="text/css" />
-  <link rel="stylesheet" href="libs/mediaelement/build/mep.css" type="text/css" />
-
-  <!-- endbuild -->
-</head>
-<body>
-  <div class="app dk" id="app">
-
-<!-- ############ LAYOUT START-->
-
-  <!-- content -->
-  <div id="content" class="app-content" role="main">
-    <div class="app-header navbar-md black box-shadow-z1">
-        <div class="navbar" data-pjax>
-              <a data-toggle="collapse" data-target="#navbar" class="navbar-item pull-right hidden-md-up m-r-0 m-l">
-                <i class="material-icons">menu</i>
-              </a>
-              <!-- brand -->
-              <a href="index.html" class="navbar-brand md">
-              	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32">
-              		<circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.2)"/>
-              		<circle cx="24" cy="24" r="22" fill="#1c202b" class="brand-color"/>
-              		<circle cx="24" cy="24" r="10" fill="#ffffff"/>
-              		<circle cx="13" cy="13" r="2"  fill="#ffffff" class="brand-animate"/>
-              		<path d="M 14 24 L 24 24 L 14 44 Z" fill="#FFFFFF" />
-              		<circle cx="24" cy="24" r="3" fill="#000000"/>
-              	</svg>
-              
-              	<img src="images/logo.png" alt="." class="hide">
-              	<span class="hidden-folded inline">pulse</span>
-              </a>
-              <!-- / brand -->
+  <head>
+    <title>Polygon HTML5 CSS Template</title>
+    <meta name="keywords" content="" />
+	<meta name="description" content="" />
+    <!-- 
+    Polygon Template
+    http://www.templatemo.com/tm-400-polygon
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/templatemo_misc.css">
+    <link href="css/templatemo_style.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,600' rel='stylesheet' type='text/css'>
       
-              <!-- nabar right -->
-              <ul class="nav navbar-nav pull-right">
-                <li class="nav-item">
-                  <a href="signup.html" class="nav-link">
-                    Signup
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a href="signin.html" class="nav-link">
-                    <span class="btn btn-sm rounded primary _600">
-                      Signin
-                    </span>
-                  </a>
-                </li>
-              </ul>
-              <!-- / navbar right -->
-      
-              <!-- navbar collapse -->
-              <div class="collapse navbar-toggleable-sm l-h-0 text-center" id="navbar">
-                <!-- link and dropdown -->
-                <ul class="nav navbar-nav nav-md inline text-primary-hover">
-                  <li class="nav-item">
-                    <a href="home.html" class="nav-link">
-                      <span class="nav-text">Site</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="player.html" class="nav-link">
-                      <span class="nav-text">Web App</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a href="rtl.html" class="nav-link">
-                      <span class="nav-text">Rtl</span>
-                    </a>
-                  </li>
-                </ul>
-                <!-- / link and dropdown -->
+    <script src="js/jquery-1.10.2.min.js"></script> 
+	<script src="js/jquery.lightbox.js"></script>
+	<script src="js/templatemo_custom.js"></script>
+    <script>
+    function showhide()
+    {
+    	var div = document.getElementById("newpost");
+		if (div.style.display !== "none")
+		{
+			div.style.display = "none";
+		}
+		else {
+			div.style.display = "block";
+		}
+    }
+  	</script>
+
+  </head>
+  <body>
+  	<div class="site-header">
+		<div class="main-navigation">
+			<div class="responsive_menu">
+				<ul>
+					<li><a class="show-1 templatemo_home" href="#">Gallery</a></li>
+					<li><a class="show-2 templatemo_page2" href="#">Our team</a></li>
+					<li><a class="show-3 templatemo_page3" href="#">Services</a></li>
+					<li><a class="show-5 templatemo_page5" href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="row templatemo_gallerygap">
+					<div class="col-md-12 responsive-menu">
+						<a href="#" class="menu-toggle-btn">
+				            <i class="fa fa-bars"></i>
+				        </a>
+					</div> <!-- /.col-md-12 -->
+                    <div class="col-md-3 col-sm-12">
+                    	<a href="#"><img src="images/templatemo_logo.jpg" alt="Polygon HTML5 Template"></a>
+                    </div>
+					<div class="col-md-9 main_menu">
+						<ul>
+							<li><a class="show-1 templatemo_home" href="#">
+                            	<span class="fa fa-camera"></span>
+                                Gallery</a></li>
+							<li><a class="show-2 templatemo_page2" href="#">
+                            	<span class="fa fa-users"></span>
+                          		  Our team</a></li>
+							<li><a class="show-3 templatemo_page3" href="#">
+                            	<span class="fa fa-cogs"></span>
+                            	Services</a></li>
+							<li><a class="show-5 templatemo_page5" href="#">
+                            	<span class="fa fa-envelope"></span>
+                                Contact</a></li>
+						</ul>
+					</div> <!-- /.col-md-12 -->
+				</div> <!-- /.row -->
+			</div> <!-- /.container -->
+		</div> <!-- /.main-navigation -->
+	</div> <!-- /.site-header -->
+    <div id="menu-container">
+    <!-- gallery start -->
+    <div class="content homepage" id="menu-1">
+    <div class="container">
+	    <div class="row templatemorow">
+    		<div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/1.jpg);">
+             	 	<div class="overlay">
+						<a href="images/gallery/1.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
               </div>
-              <!-- / navbar collapse -->
+            </div>
+          </div>
         </div>
     </div>
-    <div class="app-body">
-
-<!-- ############ PAGE START-->
-
-
-<div class="owl-carousel black owl-theme owl-dots-bottom-center" data-ui-jp="owlCarousel" data-ui-options="{
-             items: 1
-            ,loop: true
-            ,autoplay: true
-            ,nav: true
-          }">
-	<div class="row-col">
-		<div class="col-lg-2"></div>
-		<div class="col-lg-8 text-center">
-			<div class="p-a-lg">
-				<h2 class="display-4 m-y-lg">A simple, fast and responsive music template</h2>
-				<h6 class="text-muted m-b-lg">HTML5 Music Template</h6>
-				<a href="home.html" class="btn circle btn-outline b-primary m-b-lg p-x-md">Get it now</a>
-			</div>
-		</div>
-		<div class="col-lg-2"></div>
-	</div>
-	<div class="row-col">
-		<div class="col-lg-2"></div>
-		<div class="col-lg-8 text-center">
-			<div class="p-a-lg">
-				<h2 class="display-4 m-y-lg">Bootstrap 4 CSS framework</h2>
-				<h6 class="text-muted m-b-lg">Responsive layout</h6>
-				<a href="player.html" class="btn circle btn-outline b-primary m-b-lg p-x-md">View App</a>
-			</div>
-		</div>
-		<div class="col-lg-2"></div>
-	</div>
-	<div class="row-col">
-		<div class="col-lg-2"></div>
-		<div class="col-lg-8 text-center">
-			<div class="p-a-lg">
-				<h2 class="display-4 m-y-lg">Ajax powered page switch with great experience</h2>
-				<h6 class="text-muted m-b-lg">No refresh page when switching pages</h6>
-				<a href="rtl.html" class="btn circle btn-outline b-primary m-b-lg p-x-md">Get RTL</a>
-			</div>
-		</div>
-		<div class="col-lg-2"></div>
-	</div>
-</div>
-<div class="row-col">
-	<div class="col-sm-6">
-		<div class="black cover cover-gd" style="background-image: url('images/b1.jpg');">
-			<div class="p-a-lg text-center">
-				<h3 class="display-3 m-y-lg">Music</h3>
-				<p class="text-muted text-md m-b-lg">Get ready for high sound quality.</p>
-				<a href="player.html" class="btn circle white m-b-lg p-x-md">Try Free</a>
-			</div>
-		</div>
-	</div>
-	<div class="col-sm-6 black lt">
-		<div class="black cover cover-gd" style="background-image: url('images/b7.jpg');">
-			<div class="p-a-lg text-center">
-				<h3 class="display-3 m-y-lg">Artists</h3>
-				<p class="text-muted text-md m-b-lg">Listen to your favorite Artists.</p>
-				<a href="home.html" class="btn circle white m-b-lg p-x-md">View Artists</a>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="row-col dark-white">
-	<div class="col-md-3"></div>
-	<div class="col-md-6">
-		<div class="p-a-lg text-center">
-			<h3 class="display-4 m-y-lg">Light, Grey, Dark, Black themes</h3>
-			<p class="text-muted text-md m-b-lg">Config any blocks with any colors</p>
-			<a href="home.html" class="btn circle btn-outline b-black m-b-lg p-x-md">Try Settings</a>
-		</div>
-	</div>
-	<div class="col-md-3"></div>
-</div>
-
-<div class="black cover" data-stellar-background-ratio="0.5" style="background-image: url('images/b10.jpg');">
-	<div class="row-col">
-		<div class="col-md-4">
-			<div class="p-a-lg text-center">
-				<h4 class="m-y-lg">One Css framework, Unlimited options &amp; variables</h4>
-				<p class="text-muted text-md m-b-lg">Colors, layouts, components and widgets. we pre-build them for you.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="p-a-lg text-center">
-				<h4 class="m-y-lg">Two layouts, Horizontal and side navigation</h4>
-				<p class="text-muted text-md m-b-lg">With the flexiable layout options, you can build responsive layouts.</p>
-			</div>
-		</div>
-		<div class="col-md-4">
-			<div class="p-a-lg text-center">
-				<h4 class="m-y-lg">Three templates, Landing, App, Site templates</h4>
-				<p class="text-muted text-md m-b-lg">Choose the suitable one for your needs.</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- ############ PAGE END-->
-
+    <div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/2.jpg);">
+              	<div class="overlay">
+						<a href="images/gallery/2.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-    <div class="white dk pos-rlt">
-      <div class="p-a-md">
-        <div class="footer p-y-md text-primary-hover">
-        	<div class="row">
-        		<div class="col-md-3">
-        			<div class="clearfix m-b-lg">
-        				<!-- brand -->
-        				<a href="index.html" class="navbar-brand md">
-        					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="32" height="32">
-        						<circle cx="24" cy="24" r="24" fill="rgba(255,255,255,0.2)"/>
-        						<circle cx="24" cy="24" r="22" fill="#1c202b" class="brand-color"/>
-        						<circle cx="24" cy="24" r="10" fill="#ffffff"/>
-        						<circle cx="13" cy="13" r="2"  fill="#ffffff" class="brand-animate"/>
-        						<path d="M 14 24 L 24 24 L 14 44 Z" fill="#FFFFFF" />
-        						<circle cx="24" cy="24" r="3" fill="#000000"/>
-        					</svg>
-        				
-        					<img src="images/logo.png" alt="." class="hide">
-        					<span class="hidden-folded inline">pulse</span>
-        				</a>
-        				<!-- / brand -->
-        			</div>
-        		</div>
-        		<div class="col-sm-2 col-xs-6">
-        			<h6 class="text-u-c m-b text-muted">About</h6>
-        			<div class="m-b-md">
-        				<ul class="nav l-h-2x _600">
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">About us</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Mobile apps</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Blog</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Jobs</a>
-        					</li>
-        				</ul>
-        			</div>
-        		</div>
-        		<div class="col-sm-2 col-xs-6">
-        			<h6 class="text-u-c m-b text-muted">Links</h6>
-        			<div class="m-b-md">
-        				<ul class="nav l-h-2x _600">
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Help</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Support</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Legal</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Copyright</a>
-        					</li>
-        				</ul>
-        			</div>
-        		</div>
-        		<div class="col-sm-2 col-xs-6">
-        			<h6 class="text-u-c m-b text-muted">Connect</h6>
-        			<div class="m-b-md">
-        				<ul class="nav l-h-2x _600">
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Facebook</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Twitter</a>
-        					</li>
-        					<li class="nav-item">
-        						<a class="nav-link" href="#">Google+</a>
-        					</li>
-        				</ul>
-        			</div>
-        		</div>
-        		<div class="col-md-3 col-xs-6">
-        			<h6 class="text-u-c m-b text-muted">Subscribe</h6>
-        			<p>Do not want to miss our newsletter?</p>
-        			<form class="m-b-lg">
-        			    <input type="text" class="form-control" placeholder="Your email">
-        			    <button type="submit" class="btn btn-sm btn-outline b-dark rounded m-t">Subscribe</button>
-        			</form>
-        		</div>
-        	</div>
-        	<div class="b b-b m-b m-t-lg"></div>
-        	<div class="row">
-        		<div class="col-sm-8">
-        			<a href="#"="#" class="text-muted text-sm">Cookies</a>
-                </div>
-                <div class="col-sm-4">
-                	<div class="text-sm-right text-xs-left">
-                		<small class="text-muted">&copy; Copyright. All rights reserved.</small>
-                	</div>
-                </div>
-        	</div>
+    <div class="hex col-sm-6  templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/3.jpg);">
+              	<div class="overlay">
+						<a href="images/gallery/3.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/4.jpg);">
+              	<div class="overlay">
+						<a href="images/gallery/4.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/5.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/5.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  	     <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/6.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/6.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/7.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/7.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/8.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/8.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/9.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/9.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    	</div>
+	</div>
+    <div  id="newpost" style="display:none;" class="container answer_list templatemo_gallerytop">
+	    <div class="row templatemorow">
+    		<div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/10.jpg);">
+             	 	<div class="overlay">
+						<a href="images/gallery/10.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
-  </div>
-  <!-- / -->
+    <div class="hex col-sm-6">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/11.jpg);">
+              	<div class="overlay">
+						<a href="images/gallery/11.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/12.jpg);">
+              	<div class="overlay">
+						<a href="images/gallery/12.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/13.jpg);">
+              	<div class="overlay">
+						<a href="images/gallery/13.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="hex col-sm-6  templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/14.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/14.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  	     <div class="hex col-sm-6 hex-offset templatemo-hex-top1 templatemo-hex-top2">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/15.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/15.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+     <div class="hex col-sm-6 templatemo-hex-top1 templatemo-hex-top3">
+    	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/16.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/16.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top3">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/17.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/17.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hex col-sm-6 templatemo-hex-top1  templatemo-hex-top2">
+      	<div>
+          <div class="hexagon hexagon2 gallery-item">
+            <div class="hexagon-in1">
+              <div class="hexagon-in2" style="background-image: url(images/gallery/18.jpg);">
+              		<div class="overlay">
+						<a href="images/gallery/18.jpg" data-rel="lightbox" class="fa fa-expand"></a>
+					</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    	</div>
+	</div>
+    <div class="container">
+    	<div class="row">
+        	<div class="templatemo_loadmore">
+			 <button class="gallery_more" id="button" onClick="showhide()">Load More</button>
+            </div>
+        </div>
+    </div>
+    </div>
+      <!-- gallery end -->
+    <!-- team start -->
+    <div class="content team" id="menu-2">
+     <div class="templatemo_ourteam">
+     		<div class="container templatemo_hexteam">
+            	<div class="row">
+                	<div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/1.jpg);">
+                                <div class="overlay templatemo_overlay1">
+                                	<a href="#fb">
+                                   	 <div class="smallhexagon">
+                                  	 	 <span class="fa fa-facebook"></span>
+                                 	  </div>
+                                    </a>
 
-<!-- ############ LAYOUT END-->
-  </div>
+                                    <a href="#tw">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-twitter"></span>
+                                    </div>
+                                    </a>
 
-<!-- build:js scripts/app.min.js -->
-<!-- jQuery -->
-  <script src="libs/jquery/dist/jquery.js"></script>
-<!-- Bootstrap -->
-  <script src="libs/tether/dist/js/tether.min.js"></script>
-  <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
-<!-- core -->
-  <script src="libs/jQuery-Storage-API/jquery.storageapi.min.js"></script>
-  <script src="libs/jquery.stellar/jquery.stellar.min.js"></script>
-  <script src="libs/owl.carousel/dist/owl.carousel.min.js"></script>
-  <script src="libs/jscroll/jquery.jscroll.min.js"></script>
-  <script src="libs/PACE/pace.min.js"></script>
-  <script src="libs/jquery-pjax/jquery.pjax.js"></script>
+                                    <a href="#ln">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-linkedin"></span>
+                                    </div>
+                                    </a>
 
-  <script src="libs/mediaelement/build/mediaelement-and-player.min.js"></script>
-  <script src="libs/mediaelement/build/mep.js"></script>
-  <script src="scripts/player.js"></script>
-
-  <script src="scripts/config.lazyload.js"></script>
-  <script src="scripts/ui-load.js"></script>
-  <script src="scripts/ui-jp.js"></script>
-  <script src="scripts/ui-include.js"></script>
-  <script src="scripts/ui-device.js"></script>
-  <script src="scripts/ui-form.js"></script>
-  <script src="scripts/ui-nav.js"></script>
-  <script src="scripts/ui-screenfull.js"></script>
-  <script src="scripts/ui-scroll-to.js"></script>
-  <script src="scripts/ui-toggle-class.js"></script>
-  <script src="scripts/ui-taburl.js"></script>
-  <script src="scripts/app.js"></script>
-  <script src="scripts/site.js"></script>
-  <script src="scripts/ajax.js"></script>
-<!-- endbuild -->
-</body>
+                                    <a href="#rs">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-rss"></span>
+                                    </div>
+                                    </a>
+                                </div>
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Phasellus interdum</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
+                    	<h2>Free Template</h2>
+                        <p>Polygon is free HTML5 template by <span class="blue">template</span><span class="green">mo</span> that can be used for any purpose. You can remove any credit link. Please tell your friends about our website. Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this template. Feel free to visit <a href="http://www.facebook.com/templatemo" target="_parent">templatemo page</a> on Facebook.</p>
+                    </div>
+                    <div class="templatemo_servicecol2">
+                    <div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/2.jpg);">
+                                <div class="overlay templatemo_overlay1">
+                                	<a href="#fb">
+                                   	 <div class="smallhexagon">
+                                  	 	 <span class="fa fa-facebook"></span>
+                                 	  </div>
+                                    </a>
+                                    <a href="#tw">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-twitter"></span>
+                                    </div>
+                                    </a>
+                                    <a href="#ln">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-linkedin"></span>
+                                    </div>
+                                    </a>
+                                    <a href="#rs">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-rss"></span>
+                                    </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Cras interdum accumsan diam</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt">
+                    	<h2>Responsive Design</h2>
+                        <p>This is free CSS template fully compatible with many tablets and mobile devices. Mauris eget neque at sapien faucibus egestas vel vitae mi. Maecenas commodo augue risus, sed placerat neque feugiat vel.</p>
+                    </div>
+                    </div>
+               </div>
+            </div>
+            <div class="clear"></div>
+            <div class="container templatemo_hexteam s_top">
+            	<div class="row">
+                	<div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/3.jpg);">
+                                <div class="overlay templatemo_overlay1">
+                                	<a href="#fb">
+                                   	 <div class="smallhexagon">
+                                  	 	 <span class="fa fa-facebook"></span>
+                                 	  </div>
+                                    </a>
+                                    <a href="#tw">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-twitter"></span>
+                                    </div>
+                                    </a>
+                                    <a href="#ln">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-linkedin"></span>
+                                    </div>
+                                    </a>
+                                    <a href="#rs">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-rss"></span>
+                                    </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Morbi pulvinar</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt" >
+                    	<h2>Mobile Ready</h2>
+                        <p>Sed laoreet, enim quis euismod egestas, risus tortor tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper feugiat. Phasellus felis urna, lobortis vitae lacus sit amet, tristique consectetur nibh.</p>
+                    </div>
+                    <div class="templatemo_servicecol2">
+                    <div class="col-md-3 col-sm-4">
+                        	 <div class="hexagon hexagonteam gallery-item">
+                               <div class="hexagon-in1">
+                                <div class="hexagon-in2" style="background-image: url(images/team/4.jpg);">
+                                <div class="overlay templatemo_overlay1">
+                                	<a href="#fb">
+                                   	 <div class="smallhexagon">
+                                  	 	 <span class="fa fa-facebook"></span>
+                                 	  </div>
+                                    </a>
+                                    <a href="#tw">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-twitter"></span>
+                                    </div>
+                                    </a>
+                                    <a href="#ln">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-linkedin"></span>
+                                    </div>
+                                    </a>
+                                    <a href="#rs">
+                                     <div class="smallhexagon">
+                                       <span class="fa fa-rss"></span>
+                                    </div>
+                                    </a>
+                                </div>
+                                
+                                <div class="clear"></div>
+                               	<div class="overlay templatemo_overlaytxt">Sed nonummy</div>
+                                </div>
+                            </div>
+                          </div>
+  			       </div>
+                    <div class="col-md-3 col-sm-8 templatemo_servicetxt">
+                    	<h2>HTML5 CSS3</h2>
+                        <p>Phasellus sodales magna orci, id scelerisque lectus faucibus a. Vivamus varius tincidunt sem. Etiam ultricies orci sit amet sem egestas varius vitae at lacus. Nunc blandit elit in mauris semper, id iaculis felis condimentum.</p>
+                    </div>
+                    </div>
+               </div>
+            </div>
+            
+     </div>
+     </div>
+    <!--team end-->
+    <div class="clear"></div>
+    <!-- service start -->
+    <div class="content services" id="menu-3">
+    <div class="container">
+    	<div class="row templatemo_servicerow">
+        	<div class="templatemo_hexservices col-sm-6">
+            	<div class="blok text-center">
+                  <div class="hexagon-a">
+                     <a class="hlinktop" href="#">
+                     	 <div class="hexa-a">
+                         	<div class="hcontainer-a">
+                          <div class="vertical-align-a">
+                            <span class="texts-a"><i class="fa fa-bell"></i></span>
+                          </div>
+                        </div>
+                         </div>
+                     </a>
+                  </div>  
+                     <div class="hexagonservices">
+                     	<a class="hlinkbott" href="#">
+                        <div class="hexa">
+                      	  <div class="hcontainer">
+                          <div class="vertical-align">
+                          <span class="texts"></span>
+                          </div>
+                        </div>
+                      </div>
+                        </a>
+                     </div>
+                     </div>
+                     <div class="templatemo_servicetext">
+                    <h3>Etiam vulputate</h3>
+                    <p>Vestibulum diam lorem, aliquet et sagittis ac, facilisis nec massa. Suspendisse sagittis leo diam, sed dapibus eros vehicula eu. Aenean nulla magna, gravida at dui in, fringilla vestibulum massa.</p>
+                    </div>
+              </div>
+              <div class="templatemo_hexservices col-sm-6">
+            	<div class="blok text-center">
+                  <div class="hexagon-a">
+                     <a class="hlinktop" href="#">
+                     	 <div class="hexa-a">
+                         	<div class="hcontainer-a">
+                          <div class="vertical-align-a">
+                            <span class="texts-a"><i class="fa fa-briefcase"></i></span>
+                          </div>
+                        </div>
+                         </div>
+                     </a>
+                  </div>  
+                     <div class="hexagonservices">
+                     	<a class="hlinkbott" href="#">
+                        <div class="hexa">
+                      	  <div class="hcontainer">
+                          <div class="vertical-align">
+                          <span class="texts"></span>
+                          </div>
+                        </div>
+                      </div>
+                        </a>
+                     </div>
+                     </div>
+                     <div class="templatemo_servicetext">
+                    <h3>Aliquam faucibus</h3>
+                    <p>Vivamus a purus vel ante fermentum bibendum. Sed laoreet, enim quis euismod egestas, risus tortor tincidunt lacus, in iaculis mauris lectus at augue. Donec luctus nibh nec ullamcorper feugiat.</p>
+                    </div>
+              </div>
+              <div class="templatemo_hexservices col-sm-6">
+            	<div class="blok text-center">
+                  <div class="hexagon-a">
+                     <a class="hlinktop" href="#">
+                     	 <div class="hexa-a">
+                         	<div class="hcontainer-a">
+                          <div class="vertical-align-a">
+                            <span class="texts-a"><i class="fa fa-mobile"></i></span>
+                          </div>
+                        </div>
+                         </div>
+                     </a>
+                  </div>  
+                     <div class="hexagonservices">
+                     	<a class="hlinkbott" href="#">
+                        <div class="hexa">
+                      	  <div class="hcontainer">
+                          <div class="vertical-align">
+                          <span class="texts"></span>
+                          </div>
+                        </div>
+                      </div>
+                        </a>
+                     </div>
+                     </div>
+                     <div class="templatemo_servicetext">
+                    <h3>Donec sagittis</h3>
+                    <p>Phasellus sodales magna orci, id scelerisque lectus faucibus a. Vivamus varius tincidunt sem. Etiam ultricies orci sit amet sem egestas varius vitae at lacus. Nunc blandit elit in mauris semper, id iaculis felis condimentum.</p>
+                    </div>
+              </div>
+              <div class="templatemo_hexservices col-sm-6">
+            	<div class="blok text-center">
+                  <div class="hexagon-a">
+                     <a class="hlinktop" href="#">
+                     	 <div class="hexa-a">
+                         	<div class="hcontainer-a">
+                          <div class="vertical-align-a">
+                            <span class="texts-a"><i class="fa fa-trophy"></i></span>
+                          </div>
+                        </div>
+                         </div>
+                     </a>
+                  </div>  
+                     <div class="hexagonservices">
+                     	<a class="hlinkbott" href="#">
+                        <div class="hexa">
+                      	  <div class="hcontainer">
+                          <div class="vertical-align">
+                          <span class="texts"></span>
+                          </div>
+                        </div>
+                      </div>
+                        </a>
+                     </div>
+                     </div>
+                     <div class="templatemo_servicetext">
+                    <h3>Integer tempus</h3>
+                    <p>Maecenas porttitor erat et enim dapibus, sit amet accumsan velit tincidunt. Etiam sapien urna, suscipit ut purus ac, convallis pulvinar tellus. In eu neque purus. Donec cursus dictum pulvinar.</p>
+                    </div>
+              </div>
+              <div class="templatemo_hexservices col-sm-6">
+            	<div class="blok text-center">
+                  <div class="hexagon-a">
+                     <a class="hlinktop" href="#">
+                     	 <div class="hexa-a">
+                         	<div class="hcontainer-a">
+                          <div class="vertical-align-a">
+                            <span class="texts-a"><i class="fa fa-thumb-tack"></i></span>
+                          </div>
+                        </div>
+                         </div>
+                     </a>
+                  </div>  
+                     <div class="hexagonservices">
+                     	<a class="hlinkbott" href="#">
+                        <div class="hexa">
+                      	  <div class="hcontainer">
+                          <div class="vertical-align">
+                          <span class="texts"></span>
+                          </div>
+                        </div>
+                      </div>
+                        </a>
+                     </div>
+                     </div>
+                     <div class="templatemo_servicetext">
+                    <h3>Aliquam pellentesque</h3>
+                    <p>Nam auctor elementum dolor. Donec euismod, justo sed convallis blandit, ipsum erat mattis lectus, vel pharetra neque enim tristique risus. Ut consequat nisi vel justo. Curabitur in orci vel enim congue cursus.</p>
+                    </div>
+              </div>
+              
+        </div>
+    </div>
+    </div>
+    <!-- service end -->
+    <!-- contact start -->
+    <div class="content contact" id="menu-5">
+    <div class="container">
+     	<div class="row">
+        	<div class="col-md-4 col-sm-12">
+            	<div class="templatemo_contactmap">
+    			<div id="templatemo_map"></div>
+                <img src="images/templatemo_contactiframe.png" alt="contact map">
+                </div>
+                </div>
+            <div class="col-md-3 col-sm-12 leftalign">
+            	<div class="templatemo_contacttitle">Contact Information</div>
+                <div class="clear"></div>
+                <p>Integer eu neque sed mi fringilla pellentesque a eget leo. Duis ornare diam lorem, sit amet tempor mauris fringilla in. Etiam semper tempus augue, at vehicula metus. Nam vestibulum tortor nec congue ornare.</p>
+                <div class="templatemo_address">
+                	<ul>
+                	<li class="left fa fa-map-marker"></li>
+                    <li class="right">Nulla ut tellus, sit amet urna, <br>scelerisque pretium 10960</li>
+                    <li class="clear"></li>
+                    <li class="left fa fa-phone"></li>
+                    <li class="right">010-020-0770</li>
+                    <li class="clear"></li>
+                    <li class="left fa fa-envelope"></li>
+                    <li class="right">info@company.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-5 col-sm-12">
+            	<form role="form">
+              	<div class="templatemo_form">
+                	<input name="fullname" type="text" class="form-control" id="fullname" placeholder="Your Name" maxlength="40">
+              	</div>
+              	<div class="templatemo_form">
+                	<input name="email" type="text" class="form-control" id="email" placeholder="Your Email" maxlength="40">
+              	</div>
+               	<div class="templatemo_form">
+                	<input name="subject" type="text" class="form-control" id="subject" placeholder="Subject" maxlength="40">
+              	</div>
+              	<div class="templatemo_form">
+	            	<textarea name="message" rows="10" class="form-control" id="message" placeholder="Message"></textarea>
+              	</div>
+              	<div class="templatemo_form"><button type="button" class="btn btn-primary">Send Message</button></div>
+            </form>
+            </div>
+        </div>
+    	
+    </div>
+    </div>
+    </div>
+    <!-- contact end -->
+	<!-- footer start -->
+    <div class="templatemo_footer">
+    	<div class="container">
+    	<div class="row">
+        	<div class="col-md-9 col-sm-12">
+            	<span>Copyright &copy; 2014 Company Name | Designed by <a href="http://www.templatemo.com" target="_parent">Template Mo</a></span>
+            </div>
+            <div class="col-md-3 col-sm-12 templatemo_rfooter">
+            	  <a href="#">
+                 	<div class="hex_footer">
+					<span class="fa fa-facebook"></span>
+					</div>
+                  </a>
+                  <a href="#">
+                    <div class="hex_footer">
+					 <span class="fa fa-twitter"></span>
+					</div>
+                    </a>
+                  <a href="#">
+                 	<div class="hex_footer">
+					 <span class="fa fa-linkedin"></span>
+					</div>
+                 </a>
+                <a href="#">
+                	<div class="hex_footer">
+					 <span class="fa fa-rss"></span>
+					</div>
+                </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- footer end -->    
+	<script>
+	$('.gallery_more').click(function(){
+		var $this = $(this);
+		$this.toggleClass('gallery_more');
+		if($this.hasClass('gallery_more')){
+			$this.text('Load More');			
+		} else {
+			$this.text('Load Less');
+		}
+	});
+    </script>
+	<!-- templatemo 400 polygon -->
+  </body>
 </html>
